@@ -1,0 +1,230 @@
+html {
+  background-color: #C3E5AE;
+}
+
+.front-img {
+  width: 1338px;
+  border-bottom: #100f0e;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.top-bar {
+  background: #100f0e;
+  color: #fff;
+  height: 80px;
+  padding-left: 18px;
+  border-radius: 0px;
+  display: inline-flex;
+  text-align: center;
+  width: 99%;
+}
+
+.top-bar :nth-child(1) {
+  margin-top: 1%;
+  font-family: cursive;
+  font-size: xx-large;
+  color: goldenrod;
+}
+
+.top-bar :nth-child(2) {
+  justify-content: center;
+  margin-left: 30%;
+}
+
+#menu ul,
+#menu li {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+#menu ul {
+  width: 100%;
+}
+#menu li {
+  float: center;
+  display: inline;
+  position: relative;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: medium;
+  font-weight: 600;
+}
+#menu a {
+  display: block;
+  line-height: 80px;
+  padding: 0 14px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.brand-name {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.brand-name :hover {
+  color: #cd853f;
+}
+
+#menu li a:hover {
+  color: #F1E1A6;
+  background: #f2f2f2;
+}
+
+ul {
+  list-style-type: none;
+  margin: 1px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #00ffff;
+  text-align: justify;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #a9a9a9;
+}
+
+.Page-navigation-bar {
+  background-color: #dc143c;
+  font-size: large;
+}
+
+.collapsible {
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: #00008b;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.collapsible:hover {
+  background-color: #a52a2a;
+  color: #00ffff;
+}
+
+.collapsible:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  color: #ffffff;
+  margin-left: 3px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.form {
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  background-color: #F1E1A6;
+  outline: none;
+  border: 3px solid #00008b;
+  height: fit-content;
+  margin-bottom: 3%;
+  border-radius: 15px;
+  font-family: monospace;
+}
+
+td {
+  padding: 5px 10px;
+  font-size: x-large;
+}
+
+#feedback {
+  margin-top: 5%;
+  font-family: cursive;
+  font-size: xx-large;
+}
+
+#feedback-email-img {
+  padding: 100px 30px;
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+.feedback-form {
+  display: inline;
+  float: left;
+  padding: 100px 50px;
+}
+
+.feedback-form form div input {
+  width: 100% ;
+  
+}
+
+.feedback-form form div textarea {
+  width: 100%;
+  font-size: 16px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+#Pricing {
+  clear: both;
+  margin: 5% 5%;
+  padding: 20px 20px;
+  font-family: cursive;
+  font-size: xx-large;
+  justify-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.Pricing-container {
+  text-align: center;
+  margin: 0% 5%;
+  align-items: center;
+}
+
+.Pricing-Cards {
+  margin: 10px 10px;
+  padding: 10px 0px;
+  background-color: #C3E5AE;
+  outline: auto;
+  width: 25%;
+  display: block;
+  display: inline-block;
+  justify-items: center;
+  text-align: center;
+}
+
+.Pricing-Cards > p {
+  margin-bottom: 10%;
+}
+
+.nav_bar-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.company-logo{
+  align-items: center;
+}

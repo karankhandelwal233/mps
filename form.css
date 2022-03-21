@@ -1,0 +1,35 @@
+/* Style the form */
+#regForm, #vehicleForm{
+    background-color: #ffffff;
+    margin: 60px auto;
+    padding: 40px;
+    width: 40%;
+    min-width: 300px;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 50%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  input[type=password] {
+    border: 2px solid rgb(0, 0, 0);
+  }
+
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: red;
+  }
+  
+  /* Hide all steps by default: */
+  .tab, .tabVehicle {
+    display: none;
+  }
+  
+  #regID, #Price{
+    display: none;
+  }
