@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="parking.css">
+    <link rel="stylesheet" href="form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul class="nav_bar-ul">
+                <!--Right align with css-->
+                <li style="float:left" class="company-logo"><a href="index.html"><b>Metacube Parking System</a></li>
+                <li style="float:right"><a href="feedback.html"><b>Feedback</b></a></li>
+                <li style="float:right"><a href="#employee"><b>Add Employee</a></li>
+                <li style="float:right"><a href="#vehicle"><b>Add Vehicle</b></a></li>
+                <li style="float:right"><a href="#pricing"><b>Pricing</b></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <button type="button" class="collapsible" id="Employee"> <b>Add Employee</b></button>
+    <div class="form Employee">
+        <form name="Emp" id="regForm" action="">
+
+            <!-- One "tab" for each step in the form: -->
+            <div class="tab" id="Name">Full Name: <span></span> 
+                <p><input type="text" placeholder="Enter your Full Name" oninput="this.className = ''" required
+                        minlength="2"></p>
+            </div>
+
+            <div class="tab"> <span></span>
+                <p><input type="radio" \>Male</p>
+                <p><input type="radio" \>Female</p>
+            </div>
+
+            <div class="tab" id="Email"> <span></span> <br>
+                <p><input type="email" placeholder="E-mail..." oninput="this.className = '' "></p>
+            </div>
+
+            <div class="tab" id="Password" > <span id='strength'></span> <br>
+                <p><input type="password" id="Password_Strength" placeholder="Enter Password" oninput="this.className = '' " onkeyup="testPassword()"></p>
+            </div>
+
+            <div class="tab" id="RePassword"> <span></span> <br>
+                <p><input type="password" placeholder="Confirm Password" oninput="this.className = '' "></p>
+            </div>
+
+
+            <div class="tab" id="Phone"> <span></span> <br>
+                <p><input type="text" placeholder="Enter Phone Number" oninput="this.className = '' "></p>
+            </div>
+
+            <div style="overflow:auto;">
+                <div style="float:center;">
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+            </div>
+            <div id='regID'>
+                <p>Hello</p>
+            </div>
+        </form>
+    </div>
+
+    <button type="button" class="collapsible" id="Vehicle"> <b>Add Vehicle</b></button>
+    <div class="form Vehicle">
+        <form id="vehicleForm" action="">
+
+            <!-- One "tab" for each step in the form: -->
+            <div class="tabVehicle" id="Company">Vehicle Company:
+                <p><input type="text" placeholder="Enter Vehicle Company Name " oninput="this.className = '' "></p>
+            </div>
+
+            <div class="tabVehicle" id="Modal">Vehicle Model:
+                <p><input type="text" placeholder="Model" oninput="this.className = '' "></p>
+            </div>
+
+            <div class="tabVehicle" id="Type">Type:
+                <p><select name="Vehicle Type" id="VType">
+                        <option value="">--Choose Vehicle Type--</option>
+                        <option value="Bicycle">Bicycle</option>
+                        <option value="Motorcycle">Motorcycle</option>
+                        <option value="Four Wheeler">Four Wheeler</option>
+                    </select>
+                </p>
+            </div>
+
+            <div class="tabVehicle" id="VNumber">Vehicle Number:
+                <p><input type="text" placeholder="Enter Vehicle Number" oninput="this.className = '' "></p>
+            </div>
+
+            <div class="tabVehicle" id="EmpID">Employee ID:
+                <p><input type="text" placeholder="Enter Employee ID" oninput="this.className = '' "></p>
+            </div>
+
+
+            <div class="tabVehicle" id="Mark">Identification Mark:
+                <p><input type="text" placeholder="Color, mark, visible accessary" oninput="this.className = '' "></p>
+            </div>
+
+            <div style="overflow:auto;">
+                <div style="float:center;">
+                    <button type="button" id="nextBtn" onclick="nextPrevVehicle(1)">Next</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="Pricing-container" id="Price">
+        <h2 id="Pricing">Pricing</h2>
+        <hr>
+        <div>
+            <div class="Pricing-Cards" id="Price-Sec1">
+                <p></p>
+
+            </div>
+            <div class="Pricing-Cards" id="Price-Sec2">
+                <p></p>
+                <button>Purchase Now</button>
+            </div>
+            <div class="Pricing-Cards" id="Price-Sec3">
+                <p></p>
+                <button>Purchase Now</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <script src="employee.js"></script>
+    <script src="vehicle.js"></script>
+</body>
+
+</html>
+
+<!--
+    
+-->
